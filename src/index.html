@@ -1,42 +1,318 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="./assets/styles/main.scss" />
         <link
             rel="stylesheet"
-            type="text/css"
-            href="./assets/styles/main.scss"
+            href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+            crossorigin=""
         />
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script
+            src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin=""
+        ></script>
         <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+        <title>The Palau de la Música Catalana</title>
     </head>
     <body>
-        <div class="uoc-container">
+        <div class="palau-container">
+            <include class="palau-header" src="./views/header.html"></include>
+            <div class="palau-hero">
+                <h1 class="palau-hero__title">
+                    The Palau de la Música Catalana
+                </h1>
+                <p class="palau-hero__text">
+                    A place of contemplation and wonder, where the intricacies
+                    of modernist architecture and the power of music come
+                    together to create a truly unique and magical experience.
+                </p>
+            </div>
+        </div>
+
+        <section class="history-section">
+            <h2 id="history" class="history-section__title">History</h2>
+            <p class="history-section__text">
+                The Palau de la Música Catalana in Barcelona is a historic and
+                cultural landmark that has played a significant role in the
+                city's history. Designed by architect Lluís Domènech i Montaner,
+                the Palau was built between
+                <time datetime="1905">1905</time> and
+                <time datetime="1908">1908</time> to serve as the home of the
+                Orfeó Català, a choral society founded in
+                <time datetime="1891">1891</time> that aimed to promote Catalan
+                music and culture.
+            </p>
+
+            <p class="history-section__text">
+                The Palau's façade is covered in intricate mosaics and
+                sculptures, making it a true masterpiece of modernist design.
+                The interior is just as impressive, with a central auditorium
+                that is lit by a huge skylight and surrounded by ornate
+                balconies decorated with sculptures and mosaics.
+            </p>
+
+            <p class="history-section__text">
+                Over the years, the Palau has been the venue for many important
+                political and cultural events, and has hosted some of the
+                world's most famous musicians. It has become a symbol of Catalan
+                identity and pride, and a must-see attraction for anyone
+                visiting Barcelona.
+            </p>
+
+            <p class="history-section__text">
+                Today, the Palau is a UNESCO World Heritage Site and remains one
+                of the most important cultural institutions in Catalonia. Its
+                rich history and cultural significance make it a true gem of
+                Barcelona and a testament to the city's artistic and
+                intellectual heritage.
+            </p>
+        </section>
+
+        <section class="photo-section">
             <picture>
                 <source
-                    srcset="./assets/images/logo.png?as=webp&width=350"
+                    srcset="./assets/images/vert-1.jpg?as=webp&width=800"
                     type="image/webp"
                 />
                 <img
-                    src="./assets/images/logo.png?width=350"
+                    src="./assets/images/vert-1.jpg"
                     alt="Universitat Oberta de Catalunya"
-                    class="uoc-logo"
+                    class="photo-section__img"
                 />
             </picture>
-            <h1 class="uoc-title">
-                <i class="fas fa-university"></i> Hello, UOC!
-            </h1>
-            <p>
-                This is a starter template for the Advanced HTML and CSS Tools
-                courses from the Master's Program in Multimedia Applications and
-                the Master's Program in Web App and Website Development at the
-                Universitat Oberta de Catalunya.
+            <picture>
+                <source
+                    srcset="./assets/images/vert-2.jpg?as=webp&width=800"
+                    type="image/webp"
+                />
+                <img
+                    src="./assets/images/vert-2.jpg"
+                    alt="Universitat Oberta de Catalunya"
+                    class="photo-section__img"
+                />
+            </picture>
+            <picture>
+                <source
+                    srcset="./assets/images/vert-5.jpg?as=webp&width=800"
+                    type="image/webp"
+                />
+                <img
+                    src="./assets/images/vert-5.jpg"
+                    alt="Universitat Oberta de Catalunya"
+                    class="photo-section__img"
+                />
+            </picture>
+            <picture>
+                <source
+                    srcset="./assets/images/vert-3.jpg?as=webp&width=800"
+                    type="image/webp"
+                />
+                <img
+                    src="./assets/images/vert-3.jpg"
+                    alt="Universitat Oberta de Catalunya"
+                    class="photo-section__img"
+                />
+            </picture>
+            <picture>
+                <source
+                    srcset="./assets/images/vert-4.jpg?as=webp&width=800"
+                    type="image/webp"
+                />
+                <img
+                    src="./assets/images/vert-4.jpg"
+                    alt="Universitat Oberta de Catalunya"
+                    class="photo-section__img"
+                />
+            </picture>
+            <picture>
+                <source
+                    srcset="./assets/images/vert-6.jpg?as=webp&width=800"
+                    type="image/webp"
+                />
+                <img
+                    src="./assets/images/vert-6.jpg"
+                    alt="Universitat Oberta de Catalunya"
+                    class="photo-section__img"
+                />
+            </picture>
+        </section>
+
+        <section class="architecture-section">
+            <h2 id="architecture" class="architecture-section__title">
+                Architecture
+            </h2>
+            <p class="architecture-section__text">
+                The Palau de la Música Catalana is a stunning example of Catalan
+                modernist architecture, designed by Lluís Domènech i Montaner.
+                The building's exterior is covered in intricate mosaics,
+                sculptures, and stained glass windows, showcasing the incredible
+                attention to detail that went into its construction.
             </p>
-        </div>
-        <include src="./views/footer.html"></include>
-        <script type="module" src="./assets/scripts/main.js"></script>
+
+            <p class="architecture-section__text">
+                The main entrance of the Palau is adorned with a striking
+                sculpture of Saint George, the patron saint of Catalonia,
+                slaying the dragon. This iconic image is a symbol of Catalan
+                pride and identity, and is a nod to the region's rich history
+                and culture.
+            </p>
+
+            <p class="architecture-section__text">
+                Inside, the Palau's central auditorium is a true marvel of
+                design, with a spectacular stained glass skylight that floods
+                the space with natural light. The balconies that surround the
+                auditorium are decorated with a profusion of sculptures and
+                mosaics, depicting scenes from Catalan mythology and history.
+            </p>
+
+            <p class="architecture-section__text">
+                The Palau's stage is framed by a magnificent organ, one of the
+                largest in Europe, and its pipes are decorated with stunning
+                floral motifs. The organ is not only a work of art in its own
+                right but also an integral part of the Palau's acoustics,
+                ensuring that every note played in this space is rich and full
+                of life.
+            </p>
+
+            <p class="architecture-section__text">
+                All of these architectural details come together to create a
+                building that is not only beautiful but also functional,
+                ensuring that the Palau de la Música Catalana remains one of the
+                world's most iconic concert halls, and a true testament to the
+                ingenuity and creativity of Catalan design.
+            </p>
+        </section>
+        <section class="map-section">
+            <div id="map" class="map-container"></div>
+        </section>
+
+        <section class="music-section">
+            <h2 id="music" class="music-section__title">Music</h2>
+            <p class="music-section__text">
+                The Palau de la Música Catalana is renowned not only for its
+                stunning architecture but also for its exceptional acoustics,
+                making it a favorite venue for some of the world's most
+                celebrated musicians. The auditorium is designed in a horseshoe
+                shape, with a flat ceiling that allows sound waves to be
+                distributed evenly throughout the space. The use of natural
+                materials, such as wood and stained glass, helps to create a
+                warm and resonant sound that is perfect for classical music and
+                choral performances.
+            </p>
+
+            <p class="music-section__text">
+                The Palau hosts a wide range of musical genres, from classical
+                and opera to jazz and contemporary music. It is the home of the
+                Orfeó Català, a renowned choir that performs a variety of
+                Catalan and international repertoire. The Palau also hosts the
+                Barcelona Symphony and Catalonia National Orchestra, as well as
+                a number of other national and international orchestras and
+                ensembles.
+            </p>
+
+            <p class="music-section__text">
+                Many of the world's most famous musicians have performed at the
+                Palau, including Pablo Casals, Maria Callas, and Montserrat
+                Caballé. The Palau's exceptional acoustics and stunning
+                architecture make it a truly unique venue that provides an
+                unforgettable experience for both performers and audiences
+                alike. Whether you're a music lover or simply appreciate
+                beautiful architecture, a visit to the Palau de la Música
+                Catalana is not to be missed.
+            </p>
+            <ul class="premieres-list">
+                <li class="premieres-list__item">
+                    <cite lang="es">Concierto para clavecín</cite> by Manuel de
+                    Falla: This work was written in
+                    <time datetime="1923">1923</time>-<time datetime="1926"
+                        >26</time
+                    >
+                    for Wanda Landowska, who premiered the work at the Palau de
+                    la Música Catalana on
+                    <time datetime="1926/11/05">5 November 1926</time>.
+                </li>
+                <li class="premieres-list__item">
+                    <cite lang="es">Concierto de Aranjuez</cite> by Joaquín
+                    Rodrigo: This concerto for guitar and orchestra was
+                    performed for the first time in
+                    <time datetime="1940">1940</time>, with the Barcelona
+                    Symphony Orchestra conducted by César Mendoza Lasalle and
+                    the composer himself playing the solo guitar part.
+                </li>
+                <li class="premieres-list__item">
+                    <cite lang="es">Homenajes</cite> by Joaquín Rodrigo: This
+                    orchestral work was also premiered at the Palau de la Música
+                    Catalana, in <time datetime="1950">1950</time>, with the
+                    Barcelona Symphony Orchestra conducted by Eduard Toldrà.
+                </li>
+                <li class="premieres-list__item">
+                    <cite lang="ca">Dona i Ocell</cite> by Xavier Montsalvatge:
+                    This ballet score was performed for the first time in
+                    <time datetime="1960">1960</time>, with the Barcelona
+                    Symphony Orchestra conducted by Antoni Ros-Marbà.
+                </li>
+                <li class="premieres-list__item">
+                    <cite lang="ca">Homenatge a Pau Casals</cite> by Xavier
+                    Montsalvatge: This orchestral work was played first in
+                    <time datetime="1973">1973</time>, with the Barcelona
+                    Symphony Orchestra conducted by Ros-Marbà.
+                </li>
+            </ul>
+            <p class="music-section__text">
+                The Hospital Sant Pau in Barcelona, designed by the same
+                modernist architect Lluís Domènech i Montaner, is also
+                considered a jewel of modernist architecture from the beginning
+                of the 20th century. The hospital's innovative design, which
+                features colorful mosaics and abundant natural light, is a
+                testament to Domènech i Montaner's skill at creating beautiful
+                and functional spaces.
+            </p>
+            <div class="music-section__video">
+                <iframe
+                    src="https://www.youtube.com/embed/juesNiA3X2s"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    width="560"
+                    height="315"
+                ></iframe>
+            </div>
+        </section>
+
+        <section class="photo-section photo-section--horizontal">
+            <picture>
+                <source
+                    srcset="./assets/images/full1.jpg?as=webp&width=800"
+                    type="image/webp"
+                />
+                <img
+                    src="./assets/images/full1.jpg"
+                    alt="Universitat Oberta de Catalunya"
+                    class="photo-section__img"
+                />
+            </picture>
+            <picture>
+                <source
+                    srcset="./assets/images/hor-3.jpg?as=webp&width=800"
+                    type="image/webp"
+                />
+                <img
+                    src="./assets/images/hor-3.jpg"
+                    alt="Universitat Oberta de Catalunya"
+                    class="photo-section__img"
+                />
+            </picture>
+        </section>
+        <include class="palau-footer" src="./views/footer.html"></include>
+        <script src="./assets/scripts/main.js"></script>
+        <script src="./assets/scripts/map.js"></script>
         <!-- do not remove this line! -->
     </body>
 </html>
