@@ -9,9 +9,9 @@ html {
 body {
   height: 100vh;
   margin: 0;
+  background-color: $color-bg;
+  color: $color-secondary;
   font-family: $font-family-sans-serif;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  color: $color-secondary;
-  background-color: $color-bg;
 }

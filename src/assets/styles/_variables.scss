@@ -1,8 +1,9 @@
 @use "sass:color";
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&display=swap");
 
 // Typography
-$font-family-sans-serif: "Lato", sans-serif, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: "Lato", sans-serif, "Helvetica Neue", arial, sans-serif;
 $font-family-serif: "Georgia", "Times New Roman", serif;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
@@ -12,7 +13,7 @@ $font-size-extra-large: 70px;
 $line-height-base: 24px;
 
 // Colors
-$color-primary: #ff0000;
+$color-primary: #f00;
 $color-secondary: #333;
 $color-bg: #fff;
 $color-secondary-lighter: color.adjust(
