@@ -55,7 +55,7 @@
 .main-nav__link,
 .copyrights__links {
   position: relative;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   color: $color-secondary;
   text-decoration: none;
   text-transform: uppercase;
