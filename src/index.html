@@ -25,8 +25,8 @@
             <include class="palau-header" src="./views/header.html"></include>
             <div class="palau-hero">
                 <h1 class="palau-hero__title">
-                    <span class="palau-hero__title--span">The</span> Palau
-                    <span class="palau-hero__title--span">de la</span> Música
+                    <span class="palau-hero__title-span">The</span> Palau
+                    <span class="palau-hero__title-span">de la</span> Música
                     Catalana
                 </h1>
                 <p class="palau-hero__text">
@@ -76,7 +76,7 @@
             </p>
         </section>
 
-        <section class="photo-section">
+        <div class="photo-section">
             <picture>
                 <source
                     srcset="./assets/images/vert-1.jpg?as=webp&width=800"
@@ -84,7 +84,7 @@
                 />
                 <img
                     src="./assets/images/vert-1.jpg"
-                    alt="Universitat Oberta de Catalunya"
+                    alt="Outside view of one of the balconies"
                     class="photo-section__img"
                 />
             </picture>
@@ -95,7 +95,7 @@
                 />
                 <img
                     src="./assets/images/vert-2.jpg"
-                    alt="Universitat Oberta de Catalunya"
+                    alt="Detail of the stained-glass skylight"
                     class="photo-section__img"
                 />
             </picture>
@@ -106,7 +106,7 @@
                 />
                 <img
                     src="./assets/images/vert-5.jpg"
-                    alt="Universitat Oberta de Catalunya"
+                    alt="Miquel Blay's sculptural group (The Catalan song) on the corner."
                     class="photo-section__img"
                 />
             </picture>
@@ -117,18 +117,18 @@
                 />
                 <img
                     src="./assets/images/vert-3.jpg"
-                    alt="Universitat Oberta de Catalunya"
+                    alt="Detail of the staircase"
                     class="photo-section__img"
                 />
             </picture>
             <picture>
                 <source
-                    srcset="./assets/images/vert-4.jpg?as=webp&width=800"
+                    srcset="./assets/images/hor-4.jpg?as=webp&width=800"
                     type="image/webp"
                 />
                 <img
-                    src="./assets/images/vert-4.jpg"
-                    alt="Universitat Oberta de Catalunya"
+                    src="./assets/images/hor-4.jpg"
+                    alt="Sculpture by Miquel Blay on the outside"
                     class="photo-section__img"
                 />
             </picture>
@@ -139,11 +139,11 @@
                 />
                 <img
                     src="./assets/images/vert-6.jpg"
-                    alt="Universitat Oberta de Catalunya"
+                    alt="Detail of one side of the concert hall"
                     class="photo-section__img"
                 />
             </picture>
-        </section>
+        </div>
 
         <section class="architecture-section">
             <h2 id="architecture" class="architecture-section__title">
@@ -237,7 +237,7 @@
                     >
                     for Wanda Landowska, who premiered the work at the Palau de
                     la Música Catalana on
-                    <time datetime="1926/11/05">5 November 1926</time>.
+                    <time datetime="1926-11-05">5 November 1926</time>.
                 </li>
                 <li class="premieres-list__item">
                     <cite lang="es">Concierto de Aranjuez</cite> by Joaquín
@@ -280,7 +280,6 @@
                     class="music-section__video--for-media-query"
                     src="https://www.youtube.com/embed/juesNiA3X2s"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
                     width="560"
@@ -289,7 +288,7 @@
             </div>
         </section>
 
-        <section class="photo-section photo-section--horizontal">
+        <div class="photo-section photo-section--horizontal">
             <picture>
                 <source
                     srcset="./assets/images/full1.jpg?as=webp&width=800"
@@ -297,7 +296,7 @@
                 />
                 <img
                     src="./assets/images/full1.jpg"
-                    alt="Universitat Oberta de Catalunya"
+                    alt="View of the concert hall from the balcony"
                     class="photo-section__img"
                 />
             </picture>
@@ -308,11 +307,11 @@
                 />
                 <img
                     src="./assets/images/hor-3.jpg"
-                    alt="Universitat Oberta de Catalunya"
+                    alt="Stained-glass skylight"
                     class="photo-section__img"
                 />
             </picture>
-        </section>
+        </div>
         <include class="palau-footer" src="./views/footer.html"></include>
         <script src="./assets/scripts/main.js"></script>
         <script src="./assets/scripts/map.js"></script>
