@@ -14,8 +14,12 @@
   color: #fff;
   background-image: url("../images/hero-img.jpg?as=webp");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: calc(50% - 50px) 50%;
   background-size: cover;
+
+  @media (max-width: $breakpoint-mobile) {
+    background-position: calc(50% - 25px) 50%; // To center the hero image on smaller devices //
+  }
 }
 
 .palau-hero::before {
@@ -27,6 +31,14 @@
   height: 100%;
   content: "";
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+
+  @media (max-width: $breakpoint-mobile) {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.8)
+    ); // To make the text more visible on small devices //
+  }
 }
 
 .palau-hero__title {
@@ -35,6 +47,10 @@
   margin-bottom: 0;
   font-size: $font-size-extra-large;
   line-height: 1;
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 115px;
+  }
 }
 
 .palau-hero__title-span {
