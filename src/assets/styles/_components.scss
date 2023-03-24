@@ -7,7 +7,6 @@
   color: $color-secondary;
   font-weight: $font-weight-bold;
   text-decoration: none;
-  text-transform: uppercase;
 
   @extend %transitions;
 
@@ -88,6 +87,7 @@
 
 .main-nav__link {
   @include link-style($color-primary);
+  text-transform: uppercase;
 }
 
 /* ------------------------------------ *\
@@ -115,9 +115,12 @@
 }
 
 .copyrights__text {
+  margin-right: 10%;
+  margin-left: 10%;
   font-size: 14px;
 
   @media (max-width: $breakpoint-mobile) {
+    margin: 0;
     font-size: 16px;
   }
 }
