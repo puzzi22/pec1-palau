@@ -88,8 +88,8 @@
   line-height: 2;
 
   @media (max-width: $breakpoint-mobile) {
-    margin-top: 50px;
     margin-inline: 20px;
+    margin-top: 50px;
     line-height: 1.5;
   }
 }
