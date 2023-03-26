@@ -129,6 +129,6 @@
   @include link-style($color-secondary-lighter);
 }
 
-.copyrights__links:hover {
+.copyrights__links--hover {
   color: $color-secondary-lighter;
 }
