@@ -22,10 +22,6 @@
     background-color: $bg-color;
   }
 
-  &:hover {
-    color: $color-primary;
-  }
-
   &:hover::after {
     transform: scaleX(1);
   }
@@ -88,6 +84,12 @@
 .main-nav__link {
   @include link-style($color-primary);
   text-transform: uppercase;
+}
+
+.main-nav__link--hover {
+  &:hover {
+    color: $color-primary;
+  }
 }
 
 /* ------------------------------------ *\
