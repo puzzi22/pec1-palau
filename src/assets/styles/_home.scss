@@ -14,11 +14,11 @@
   color: #fff;
   background-image: url("../images/hero-img.jpg?as=webp");
   background-repeat: no-repeat;
-  background-position: calc(50% - 50px) 50%; // To center the image on desktops //
-  background-size: 110%; // To make sure the off-centering doesn't leave a blank space on the right side //
+  background-position: calc(50% - 50px) 50%; // To center the image on desktops
+  background-size: 110%; // To make sure the off-centering doesn't leave a blank space on the right side
 
   @media (max-width: $breakpoint-mobile) {
-    background-position: calc(50% - 25px) 50%; // To center the hero image on smaller devices //
+    background-position: calc(50% - 25px) 50%; // To center the hero image on smaller devices
     background-size: cover;
   }
 }
@@ -38,7 +38,7 @@
       to bottom,
       rgb(0, 0, 0, 0.4),
       rgb(0, 0, 0, 0.8)
-    ); // To make the text more visible on small devices //
+    ); // To make the text more visible on small devices
   }
 }
 
